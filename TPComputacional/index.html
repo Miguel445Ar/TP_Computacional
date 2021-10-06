@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Img Filter App</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Images Filter Application</h1>
+    </header>
+    <h2 class="description">Seleccione una imagen y el filtro a aplicar</h2>
+    <main class="main">
+        <select name="filter" id="filter__list" class="main__list">
+            <option value="" selected>Select a type of filter</option>
+            <option value="Average Filter">Average Filter</option>
+            <option value="Median Filter">Median Filter</option>
+            <option value="Laplacian Filter">Laplacian Filter</option>
+            <option value="Laplacian Filter">Sobel Filter</option>
+        </select>
+        <img id = "img_input" class="img">
+        <input type="file" name="" id="input_file" class="input">
+        <canvas id="canvas" class="main__canvas"></canvas>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
